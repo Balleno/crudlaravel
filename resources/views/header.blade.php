@@ -11,6 +11,21 @@
         * {
             text-align: center;
         }
+        #page-container {
+            position: relative;
+            min-height: 100vh;
+            }
+
+        #content-wrap {
+            padding-bottom: 2.5rem;    /* Footer height */
+            }
+
+        /*------------------- IMAGENES -------------------*/
+        
+        #logo {
+            width: 10%;
+        }
+
         /*------------------ FUENTES -----------------*/
         @import url('https://fonts.googleapis.com/css2?family=Quintessential&display=swap');
 
@@ -49,10 +64,10 @@
         /*------------ FOOTER ----------------*/
         footer {
             background-color: #333;
-            position:absolute;
-            bottom:0;
-            height: 200px;
-            width:100%;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 2.5rem;            /* Footer height */
         }
 
         footer a {
@@ -94,9 +109,11 @@
     </style>
 </head>
 <body>
+    <div id="page-container">   
     <nav id="header">
         <ul id="menunav">
             <li><a href="{{ url('/') }}">Inicio</a></li>
             <li><a href="{{ url('plato/') }}">Menú</a></li>
         </ul>
     </nav>
+    <div id="content-wrap">
